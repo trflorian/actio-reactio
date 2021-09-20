@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b6b1fbc0ab69245a93266e9b0d0276, type: 3}
+  m_Name: Playground
+  m_EditorClassIdentifier: 
+  levelNumber: -1
+  levelName: Playground
+  objects:
+  - placeableObject: {fileID: 11400000, guid: 54f20a8703146bc40b5e61323d8605b6, type: 2}
+    amount: 20
+  - placeableObject: {fileID: 11400000, guid: 9df74a55d0419fa4ca6571496e978c1b, type: 2}
+    amount: 20
+  - placeableObject: {fileID: 11400000, guid: 3f15b05b672f0a64cb2363c775afe94e, type: 2}
+    amount: 50
+  - placeableObject: {fileID: 11400000, guid: d1cfa6f8cc8fed14b96d36a2b2c57074, type: 2}
+    amount: 3
+  - placeableObject: {fileID: 11400000, guid: 7c36684034f815d428b25026b5e8fe84, type: 2}
+    amount: 0
+  - placeableObject: {fileID: 11400000, guid: 82b59bad931d84a42a971f780caca59f, type: 2}
+    amount: 0
