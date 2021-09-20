@@ -2,7 +2,7 @@
 
 # Actio Reactio
 Actio Reactio is a short physics puzzle game created during the [Azure Lux 2021 game jam](https://itch.io/jam/azure-lux) on the theme **Chain Reaction**. The goal of the game is to place different objects in the scene, then starting the physics simulation and getting the golden ball to the designated goal area as fast as possible.
-At the end of the jam time the game has 8 levels and a sandbox/playground level available to play.
+The game has 9 levels and a sandbox/playground level available to play.
 
 # How to play
 Head over to the [game's itch.io page](https://flipflostudios.itch.io/actio-reactio) and play the game either in the browser or download an executable.
