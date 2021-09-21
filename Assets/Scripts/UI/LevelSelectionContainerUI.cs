@@ -50,7 +50,15 @@ namespace UI
 
         private void OnSelectLevel(int level)
         {
-            _selectedLevel = Mathf.Clamp(level, 0, levels.Count-1);
+            // last level is playground level
+            if (level == -1)
+            {
+                _selectedLevel = levels.Count - 1;
+            }
+            else
+            {
+                _selectedLevel = Mathf.Clamp(level, 0, levels.Count - 1);
+            }
 
             _rectTransform.DOAnchorPosY(_initialY + _selectedLevel * 17, 0.3f);
 
