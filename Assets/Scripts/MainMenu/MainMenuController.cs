@@ -16,5 +16,10 @@ namespace MainMenu
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        public void ShowScoreboard()
+        {
+            SceneManager.LoadScene("Scoreboard");
+        }
     }
 }
