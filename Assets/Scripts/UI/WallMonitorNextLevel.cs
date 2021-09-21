@@ -29,7 +29,7 @@ namespace UI
             {
                 // hide panel
                 transform.position += new Vector3(0, 0, 1);
-                nextLevelButton.interactable = false;
+                if(nextLevelButton) nextLevelButton.interactable = false;
             }
 
             LevelManager.Instance.OnGoalReached += GoalReached;
@@ -44,7 +44,7 @@ namespace UI
         {
             if (_nextLevelExists || !showOnlyWhenNextLevelExists)
             {
-                nextLevelButton.interactable = true;
+                if(nextLevelButton) nextLevelButton.interactable = true;
                 transform.DOMoveZ(_endPositionZ, 0.5f);
             }
         }

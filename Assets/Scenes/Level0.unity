@@ -2677,6 +2677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdee0d70d82ee046aef02194bf0d20f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevelButton: {fileID: 2056219585}
   showOnlyWhenNextLevelExists: 1
 --- !u!1 &1344062410
 GameObject:
@@ -4652,6 +4653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769e8d59b88772a4a90693a646ecf8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStatic: 0
 --- !u!1001 &4143195699375667522
 PrefabInstance:
   m_ObjectHideFlags: 0

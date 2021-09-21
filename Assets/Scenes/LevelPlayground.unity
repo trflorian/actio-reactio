@@ -491,6 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdee0d70d82ee046aef02194bf0d20f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevelButton: {fileID: 1883551490}
   showOnlyWhenNextLevelExists: 1
 --- !u!4 &248623917
 Transform:
