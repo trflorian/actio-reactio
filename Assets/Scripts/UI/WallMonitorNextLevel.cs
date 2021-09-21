@@ -3,11 +3,14 @@ using DG.Tweening;
 using Level;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace UI
 {
     public class WallMonitorNextLevel : MonoBehaviour
     {
+        [SerializeField] private Button nextLevelButton;
+        
         public bool showOnlyWhenNextLevelExists;
         
         private float _endPositionZ;
@@ -26,6 +29,7 @@ namespace UI
             {
                 // hide panel
                 transform.position += new Vector3(0, 0, 1);
+                nextLevelButton.interactable = false;
             }
 
             LevelManager.Instance.OnGoalReached += GoalReached;
@@ -40,6 +44,7 @@ namespace UI
         {
             if (_nextLevelExists || !showOnlyWhenNextLevelExists)
             {
+                nextLevelButton.interactable = true;
                 transform.DOMoveZ(_endPositionZ, 0.5f);
             }
         }
