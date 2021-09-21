@@ -44,8 +44,18 @@ namespace UI
             var dy = Input.mouseScrollDelta.y;
             if (Mathf.Abs(dy) >= 0.01f)
             {
-                OnSelectLevel(_selectedLevel - (int)dy);
+                OnScrollLevel(-(int)dy);
             }
+        }
+
+        private void OnScrollLevel(int dy)
+        {
+            if (_selectedLevel == 0 && dy < 0)
+            {
+                // don't wrap around when scrolling
+                dy = 0;
+            }
+            OnSelectLevel(_selectedLevel + dy);
         }
 
         private void OnSelectLevel(int level)
